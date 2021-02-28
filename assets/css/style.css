@@ -1,0 +1,36 @@
+.navbar-brand {
+    font-size: 30px;
+    font-weight: 2px;
+ }
+ 
+ .a {
+     text-align: center;
+ }
+ 
+ .bg-city {
+     background-color: whitesmoke;
+     padding: 10px;
+ }
+ 
+ .nav-item {
+     font-size: 20px;
+     margin-top: 10px;
+     padding: 10px;
+ }
+ 
+ .weather-conditions {
+     background-color: lightskyblue;
+     margin-top: 10px;
+     margin-bottom: 20px;
+     padding: 10px;
+     border: 1px solid grey;
+ }
+ 
+ .forecast {
+     background-color: lightgrey;
+     margin-top: 10px;
+ }
+ 
+ .card {
+     display: inline-block;
+ }

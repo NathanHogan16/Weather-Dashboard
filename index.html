@@ -4,9 +4,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+    
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Weather Dashboard</title>
 </head>
-<body>
-    
+<body class="flex-column min-100-vh">
+    <header class="hero">
+        <h1 class="title">Weather Dashboard</h1>
+    </header>
+
+    <div class="container">
+        <!-- Rows (!! Up to 12 units !!) added for City Search, Current Weather Conditions, and 5-Day Forecast -->
+        <div class="row">
+            <div class="col-3 bg-city">
+                <h4>Search by City</h4>
+                <!-- div form to input city -->
+                <form id="city-form">
+                    <div><input type="text" id="city-name"></div>
+                    <div><input type="submit"></div>
+                </form>
+                <!-- input form to display Recent Searches in localStorage -->
+                <ul class="nav flex-column" id="search">
+                    <li class="nav-item">Recent Searches</li>
+                    <input type="text" class="form-control" id="" placeholder="">
+                </ul>
+                <!-- added Clear All button to clear user input/add functionality -->
+                <button>Clear All</button>
+            </div> 
+
+            <div id="show"></div>
+    <div>
+        <!-- div container that stores current weather conditions for getWeather(city); function in script.js -->
+        <div class="container">
+            <div class="col-9 weather-conditions">
+                <h4>Current Weather Conditions</h4>
+                <div id="city"></div>
+                <div id="date"></div>
+                <div id="description"></div>
+                <div id="icon"></div>
+                <div id="temp"></div>
+                <div id="humidity"></div>
+                <div id="speed"></div>
+                <div id="index"></div>
+            </div>
+        </div>
+       <!-- Used Bootstrap Cards model to create 5-day forecast templates -->
+       <!-- Need to add functionality -->
+        <div class="container-fluid">
+            <h4>
+                5-Day Forecast:
+            </h4>
+            <div class="card text-white bg-primary mb-3" style="max-width: 9rem;">
+                <div class="dayOne">
+                    <p class="temp"></p>
+                    <p class="humidity"></p>
+                </div> 
+        </div>
+            <div class="card text-white bg-primary mb-3" style="max-width: 9rem;">
+                <div class="dayTwo">
+                    <p class="temp"></p>
+                    <p class="humidity"></p>
+                </div>
+        </div>
+            <div class="card text-white bg-primary mb-3" style="max-width: 9rem;">
+                <div class="dayThree">
+                    <p class="temp"></p>
+                    <p class="humidity"></p>
+                </div>
+        </div>
+            
+        <div class="card text-white bg-primary mb-3" style="max-width: 9rem;">
+                <div class="dayFour">
+                    <p class="temp"></p>
+                    <p class="humidity"></p>
+                </div>
+        </div>
+
+        <div class="card text-white bg-primary mb-3" style="max-width: 9rem;">
+                <div class="dayFive">
+                    <p class="temp"></p>
+                    <p class="humidity"></p>
+                </div>
+        </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
