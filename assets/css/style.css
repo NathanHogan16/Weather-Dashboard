@@ -1,36 +1,31 @@
-.navbar-brand {
-    font-size: 30px;
-    font-weight: 2px;
- }
- 
- .a {
-     text-align: center;
- }
- 
- .bg-city {
-     background-color: whitesmoke;
-     padding: 10px;
- }
- 
- .nav-item {
-     font-size: 20px;
-     margin-top: 10px;
-     padding: 10px;
- }
- 
- .weather-conditions {
-     background-color: lightskyblue;
-     margin-top: 10px;
-     margin-bottom: 20px;
-     padding: 10px;
-     border: 1px solid grey;
- }
- 
- .forecast {
-     background-color: lightgrey;
-     margin-top: 10px;
- }
- 
- .card {
-     display: inline-block;
- }
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: rgb(248, 249, 250);
+    background-color: rgb(33, 37, 41);
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.hero {
+    background-color: rgb(52, 58, 64);
+    color: white;
+}
+
+.list-group-item:hover {
+    color: white;
+    background-color: rgb(52, 58, 64, .5);
+    cursor: pointer;
+}
+
+#time-forecast {
+    font-size: 16px;
+}
+
+#current-weather-container {
+    color: black;
+}
