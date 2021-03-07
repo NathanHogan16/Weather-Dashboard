@@ -5,15 +5,15 @@
 body {
     margin: 0;
     padding: 0;
-    color: rgb(248, 249, 250);
+    color: rgb(33, 37, 41);
     background-color: rgb(33, 37, 41);
     line-height: 1.5;
     font-size: 16px;
 }
 
 .hero {
-    background-color: rgb(52, 58, 64);
-    color: white;
+    background-color: rgb(66, 70, 73);
+    color:white;
 }
 
 .list-group-item:hover {
